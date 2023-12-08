@@ -6,11 +6,11 @@ import footelogo from './assets/harvfooterimg.png'
 
 export default function ShopFooter() {
   return (
-    <div className='h-[211px] w-[100vw] p-[4rem] bg-[#C9C9C9] mt-[16rem] flex font-semibold justify-between items-center'>
+    <div className='h-[211px] w-[100vw] p-[1rem] md:p-[4rem] bg-[#C9C9C9] mt-[16rem] flex font-semibold justify-between items-center'>
         <div className='min-w-[12rem] w-[20%] hidden md:block'>
         <img src={footelogo} alt="" />
         </div>
-      <div className='md:w-[50%] sm:w-[70%] w-[70%]  md:px-[4rem] flex justify-between items-center'>
+      <div className='md:w-[50%] sm:w-[65%] w-[70%]  md:px-[4rem] flex justify-between items-center'>
         <p>Help</p>
         <p>Contact Us</p>
         <p>Privacy & Terms</p>

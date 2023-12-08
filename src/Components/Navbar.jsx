@@ -54,11 +54,11 @@ xmlns="http://www.w3.org/2000/svg" className='w-[20px]' x="0px" y="0px" width="1
 </div>
 
 <div id={options?'showoptions':'hideoptions'} className=' md:hidden flex flex-col text-center  justify-between items-center absolute -right-2  rounded-lg top-[5.2rem] bg-[rgba(255,255,255,0.28)] '>
-        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]  mt-1 w-full px-4'>Home</nav>
-        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]   mt-1 w-full px-4'>About Us</nav>
-        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]   mt-1 w-full px-4'>Services</nav>
-        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]  mt-1 w-full px-4'>Shop</nav>
-        <nav className='   mt-1 w-full px-4'>Contact Us</nav>
+        <nav className='border-b-2  border-[rgba(126,121,121,0.55)] md:hidden mt-1 w-[10rem] px-4'>Home</nav>
+        <nav className='border-b-2  border-[rgba(126,121,121,0.55)] md:hidden  mt-1 w-[10rem] px-4'>About Us</nav>
+        <nav className='border-b-2  border-[rgba(126,121,121,0.55)] md:hidden  mt-1 w-[10rem] px-4'>Services</nav>
+        <nav className='border-b-2  border-[rgba(126,121,121,0.55)] md:hidden mt-1 w-[10rem] px-4'>Shop</nav>
+        <nav className='   mt-1 w-full px-4 md:hidden'>Contact Us</nav>
      </div>
 
      </div>

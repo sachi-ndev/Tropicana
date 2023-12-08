@@ -19,7 +19,7 @@ export default function ShopNav() {
         </Link>
      </div>
 
-     <div className='hidden  md:w-[40vw] md:flex justify-between items-center'>
+     <div className='hidden md:w-[40vw] md:flex justify-between items-center'>
         <nav>Home</nav>
         <nav>About Us</nav>
         <nav>Services</nav>
@@ -56,11 +56,11 @@ xmlns="http://www.w3.org/2000/svg" className='w-[20px]' x="0px" y="0px" width="1
 </svg>
 </div>
 
-<div id={options?'showoptions':'hideoptions'} className=' md:hidden flex flex-col text-center  justify-between items-center absolute -right-2  rounded-lg top-[5.2rem] bg-[rgba(255,255,255,0.28)] '>
-        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]  mt-1 w-full px-4'>Home</nav>
-        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]   mt-1 w-full px-4'>About Us</nav>
-        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]   mt-1 w-full px-4'>Services</nav>
-        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]  mt-1 w-full px-4'>Shop</nav>
+<div id={options?'showoptions':'hideoptions'} className=' md:hidden  flex flex-col text-center  justify-between items-center absolute -right-2  rounded-lg top-[5.2rem] bg-[rgba(255,255,255,0.28)] '>
+        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]  mt-1 px-4 w-[10rem]'>Home</nav>
+        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]   mt-1 px-4 w-[10rem]'>About Us</nav>
+        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]   mt-1 px-4 w-[10rem]'>Services</nav>
+        <nav className='border-b-2  border-[rgba(126,121,121,0.55)]  mt-1 px-4 w-[10rem]'>Shop</nav>
         <nav className='   mt-1 w-full px-4'>Contact Us</nav>
      </div>
 

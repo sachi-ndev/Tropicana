@@ -30,7 +30,7 @@ export default function Subscip() {
             id="board"
           >
             <div
-              className="bg-tertiary rounded-full border-0 md:border-[15px] absolute"
+              className="bg-tertiary rounded-full border-0 md:border-[15px] absolute "
               id="playbtn"
             >
               <svg
