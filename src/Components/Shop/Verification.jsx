@@ -1,7 +1,19 @@
 import React from 'react'
+import ShopFooter from './ShopFooter'
+import ShopNav from './ShopNav'
+import { Link } from 'react-router-dom'
+import './shop.css'
+
 
 export default function Verification() {
   return (
+    <div className='relative'>
+    <div className='absolute inset-0 top-7 z-0 h-[10vh]'>
+        <ShopNav/>  
+    </div>
+
+
+
     <div className=" w-[100vw] z-40 flex flex-col items-center justify-start">
     <div className="h-[100vh] w-[100vw] flex flex-col justify-between items-start mb-40" id="shopbg">
       <div className="h-[70vh] flex flex-col  mt-[15rem]  items-start pl-[50px] md:pl-[125px]">
@@ -56,14 +68,19 @@ export default function Verification() {
 
     
         </div> 
-        <div className="mb-[3rem] w-full text-center">
+        <div className="mb-[3rem] flex flex-col items-center justify-center -ml-[2rem] w-full text-center">
         <p className="">Didn't Received the code <span className="text-[#0045A3]"> Resent </span></p>
+        <Link to='/shop/create'>
         <button className=" px-[8rem] rounded-full text-white py-4 mt-[35px] text-[20px] bg-secondary">Sign Up</button>
+        </Link>
         </div>  
       </div>
    
       
     </div>
   </div>
+
+  <ShopFooter/>
+    </div>
   )
 }

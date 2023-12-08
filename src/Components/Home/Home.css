@@ -40,7 +40,11 @@
     transition: opacity 1s  ease-in-out;
     transition-delay: .5s;
 }
-
+@media (max-width:888px) {
+    #potimg{
+    display: none;
+    }
+}
 
 #namehider:hover #hidename{
    opacity: 0;

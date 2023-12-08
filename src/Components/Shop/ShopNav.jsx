@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Harvestrylogo from './assets/Harvestay logo 2.png'
+import { Link } from 'react-router-dom'
 
 
 export default function ShopNav() {
@@ -13,7 +14,9 @@ export default function ShopNav() {
   return (
     <div className='w-[90vw] h-[4rem] md:h-auto bg-[rgba(255,255,255,0.28)] md:bg-[rgb(255,255,255)] py-1 flex  items-center justify-between mx-auto px-5 md:px-12 rounded-full'>
      <div className='w-[20vw]  min-w-[10rem]'>
+        <Link to='/'>
         <img src={Harvestrylogo} className='h-[2rem] md:h-auto' alt="" />
+        </Link>
      </div>
 
      <div className='hidden  md:w-[40vw] md:flex justify-between items-center'>

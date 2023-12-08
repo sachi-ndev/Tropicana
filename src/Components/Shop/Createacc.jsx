@@ -1,7 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ShopNav from "./ShopNav";
+import ShopFooter from "./ShopFooter";
+import './shop.css'
 
 export default function Createacc() {
   return (
+
+    <div className='relative'>
+    <div className='absolute inset-0 top-7 z-0 h-[10vh]'>
+        <ShopNav/>  
+    </div>
+
+
+
     <div className=" w-[100vw] z-40 flex flex-col items-center justify-start ">
       <div className="h-[100vh] w-[100vw] flex flex-col justify-between items-start mb-40" id="shopbg">
         <div className="h-[70vh] flex flex-col  mt-[15rem]  items-start pl-[50px] md:pl-[125px]">
@@ -30,13 +42,22 @@ export default function Createacc() {
             />
           </div> 
           <div className="mt-[5rem] ">
+          <Link to='/shop/login'>
           <button className=" px-[8rem] rounded-full text-white py-4 text-[20px] bg-secondary">Sign Up</button>
+          </Link>
+          <Link to='/shop/login'>
           <p className="mt-5">Already have an account? <span className="text-[#EE4B22]">Sign in</span></p>
+          </Link>
           </div>  
         </div>
      
         
       </div>
+    </div>
+
+
+
+    <ShopFooter/>
     </div>
   );
 }
