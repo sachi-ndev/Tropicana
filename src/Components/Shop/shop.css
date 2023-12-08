@@ -1,0 +1,10 @@
+#shopbg{
+    background-image: url('./assets/harvbackmg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#acctitle{
+    font-size: clamp(40px,4vw,58px);
+
+}

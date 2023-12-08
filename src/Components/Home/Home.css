@@ -1,0 +1,159 @@
+#home_bg{
+    background-image: url(./Assets/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#starthead1{
+    font-size: clamp(24px,2.75vw,56px);
+}
+#starthead2{
+    font-size: clamp(28px,3vw,56px);
+}
+#worldhead{
+    font-size: clamp(28px,2.4vw,40px);
+
+}
+
+#productgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+#potname {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+#potdiv:hover{
+    background-color: #eaf3da;
+}
+
+#potdiv:hover #potname {
+    max-height: 1000px; 
+    transition: max-height 1s ease-in-out;
+}
+#hidename{
+    transition: opacity 1s  ease-in-out;
+    transition-delay: .5s;
+}
+
+
+#namehider:hover #hidename{
+   opacity: 0;
+   transition: opacity 0s  ease-in-out;
+  
+}
+
+#splide1{
+    background-image: url('./Assets/splide1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#splide2{
+    background-image: url('./Assets/splide2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#splide3{
+    background-image: url('./Assets/splide3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#splide4{
+    background-image: url('./Assets/splide4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#harvestay{
+    background-image: url('./Assets/harvestay.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:750px){
+    #harvleft{
+        background-image: url('./Assets/harvestay.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+    }
+    
+}
+
+
+#shadow_div{
+    box-shadow: -2px -42px 147px 110px rgba(91, 155, 62, 0.6);
+    -webkit-box-shadow: -2px -42px 147px 110px rgba(91, 155, 62, 0.6);
+    -moz-box-shadow: -2px -42px 147px 110px rgba(91, 155, 62, 0.6);
+    background-color:rgba(91, 155, 62, 0.6);
+    position: absolute;
+    top: 333px;
+    transition: top 1s;
+}
+
+#cateshadow
+{
+    box-shadow: 0px -1px 56px 2px rgba(142,130,130,0.35);
+    -webkit-box-shadow: 0px -1px 56px 2px rgba(142,130,130,0.35);
+    -moz-box-shadow: 0px -1px 56px 2px rgba(142,130,130,0.35);
+}
+#cateshadow:hover{
+    height: 200px;
+    transition: all 1s;
+    background-color: #98c34733;
+}
+
+
+#splide1:hover #shadow_div,
+#splide2:hover #shadow_div,
+#splide3:hover #shadow_div,
+#splide4:hover #shadow_div{
+    top: 0px;
+    }
+
+#board{
+   
+    background-image: url('./Assets/borard.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#playbtn:hover {
+    box-shadow: 10 10 10 greenyellow;
+}
+
+@media(max-width:1050px){
+    #productgrid{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr ;
+        gap: 20px;
+        margin-bottom: 24rem;
+    }   
+}
+@media(max-width:780px){
+    #productgrid{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr ;
+        gap: 20px;
+        margin-bottom: 0rem;
+    }   
+}
+@media(max-width:560px){
+    #productgrid{
+        height: auto;
+
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        gap: 20px;
+    }   
+}

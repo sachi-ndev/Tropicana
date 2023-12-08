@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+    
+
+}
+#showoptions{
+    display: block;
+    animation: showopt 2s ease-out;
+
+}
+@keyframes  showopt{
+    0%{
+        opacity: 0;
+    }
+}
+#hideoptions{
+    
+    display: none;
+}
